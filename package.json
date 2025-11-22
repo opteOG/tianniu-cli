@@ -1,0 +1,34 @@
+{
+  "name": "my-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint",
+    "spellcheck": "cspell lint --dot --gitignore --color --cache --show-suggestions \"{packages, apps}/**/*.@(html|js|cjs|mjs|ts|tsx|css|scss|md)\"",
+    "commit": "git-cz"
+  },
+  "keywords": [],
+  "author": "tianniu",
+  "license": "ISC",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-git"
+    }
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "prettier": "^3.6.2",
+    "eslint": "^9.39.1",
+    "@eslint/js": "^9.39.1",
+    "typescript-eslint": "^8.47.0",
+    "@typescript-eslint/eslint-plugin": "^8.47.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "globals": "^16.5.0",
+    "cspell": "^9.3.2",
+    "cz-git": "^1.12.0",
+    "commitizen": "^4.3.1",
+    "@commitlint/cli": "^20.1.0",
+    "husky": "^9.1.7"
+  }
+}
