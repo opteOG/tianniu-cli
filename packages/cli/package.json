@@ -1,12 +1,30 @@
 {
-  "name": "@my-cli/cli",
+  "name": "@tianniu-cli/cli",
   "version": "1.0.0",
+  "bin": {
+    "tianniu": "./bin/tianniu"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsup --watch",
+    "build": "tsup"
   },
   "keywords": [],
   "author": "tianniu",
   "license": "ISC",
-  "description": ""
+  "description": "一个基于 typescript 实现的 cli 工具",
+  "dependencies": {
+    "commander": "^14.0.2",
+    "picocolors": "^1.1.1",
+    "prompts": "^2.4.2",
+    "consola": "^3.4.2",
+    "ora": "^9.0.0",
+    "fs-extra": "^11.3.2",
+    "giget": "2.0.0",
+    "@tianniu-cli/ai": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/prompts": "^2.4.9"
+  }
 }

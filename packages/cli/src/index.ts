@@ -1,1 +1,1 @@
-console.log('wqeqweqeq')
+export * from './cli'
