@@ -1,5 +1,4 @@
 import { Command } from 'commander'
-import ora from 'ora'
 import { join } from 'path'
 import prompts from 'prompts'
 
@@ -28,8 +27,6 @@ export const testGen = (program: Command) => {
       // 检查函数路径是否存在
       await checkFileExist(functionPath)
       const writeFilePath = await createFile(functionName, 'test')
-      const spinner = ora(`正在生成${functionName}的测试用例...`).start()
       await writeFileStream(functionPath, writeFilePath, 'test')
-      spinner.succeed(`${functionName}的测试用例已生成`)
     })
 }

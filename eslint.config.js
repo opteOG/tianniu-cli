@@ -20,7 +20,7 @@ const groups = [
 
 export default ts.config({
   files: ['**/*.{js,ts}'],
-  ignores: ['**/dist/*.js'],
+  ignores: ['packages/**/dist/**', 'packages/cli/templates/**'],
   extends: [js.configs.recommended, ...ts.configs.recommended],
   rules: {
     'simple-import-sort/imports': groups,

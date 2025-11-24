@@ -1,5 +1,4 @@
 import { Command } from 'commander'
-import ora from 'ora'
 import { join } from 'path'
 import prompts from 'prompts'
 
@@ -28,8 +27,6 @@ export const textGen = (program: Command) => {
       // 检查组件路径是否存在
       await checkFileExist(componentPath)
       const writeFilePath = await createFile(componentName, 'summarize')
-      const spinner = ora(`正在生成${componentName}的Storybook文档...`).start()
       await writeFileStream(componentPath, writeFilePath, 'summarize')
-      spinner.succeed(`${componentName}的Storybook文档已生成`)
     })
 }
