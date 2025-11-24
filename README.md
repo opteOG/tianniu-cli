@@ -25,7 +25,7 @@ tianniu-cli/
 
 ```bash
 # 克隆项目
-git clone https://github.com/your-org/tianniu-cli.git
+git clone [https://github.com/your-org/tianniu-cli.git](https://github.com/opteOG/tianniu-cli.git)
 
 # 安装依赖
 pnpm install
