@@ -2,7 +2,7 @@ import { readFile, writeFile } from 'fs-extra'
 import ora from 'ora'
 import prompts from 'prompts'
 
-import { runAI } from '@tianniu-cli/ai'
+import { runAIStream } from '@tianniu-cli/ai'
 
 import { GenType } from '../types/gen'
 
@@ -31,7 +31,7 @@ export async function writeFileStream(filePath: string, writeFilePath: string, o
   // 读取文件内容
   const content = await readFile(filePath, 'utf-8')
   // 调用AI模型
-  const stream = await runAI(content, options, model)
+  const stream = await runAIStream(content, options, model)
   for await (const part of stream) {
     const delta = part.choices[0]?.delta.content
     if (delta) {

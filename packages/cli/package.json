@@ -21,7 +21,10 @@
     "ora": "^9.0.0",
     "fs-extra": "^11.3.2",
     "giget": "2.0.0",
-    "@tianniu-cli/ai": "workspace:*"
+    "@tianniu-cli/ai": "workspace:*",
+    "lighthouse": "^13.0.1",
+    "chrome-launcher": "^1.2.1",
+    "cli-table3": "0.6.5"
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.4",
