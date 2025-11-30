@@ -1,5 +1,7 @@
 // version
+import { audit } from './base/audit'
 import { build } from './base/build'
+import { clean } from './base/clean'
 import { create } from './base/create'
 import { info } from './base/info'
 import { serve } from './base/serve'
@@ -15,3 +17,5 @@ registerCommand(serve)
 registerCommand(build)
 registerCommand(textGen)
 registerCommand(testGen)
+registerCommand(clean)
+registerCommand(audit)
