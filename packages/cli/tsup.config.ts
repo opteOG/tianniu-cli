@@ -1,7 +1,7 @@
 import { defineConfig } from 'tsup'
 
 export default defineConfig({
-  entry: ['src'],
+  entry: ['src/index.ts'],
   format: ['cjs'],
   outExtension() {
     return {
@@ -9,4 +9,5 @@ export default defineConfig({
     }
   },
   clean: true,
+  dts: true,
 })

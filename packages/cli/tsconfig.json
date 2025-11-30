@@ -4,7 +4,11 @@
     // File Layout
     // "rootDir": "./src",
     // "outDir": "./dist",
-
+    "baseUrl": "../../",
+    "paths": {
+      "@/tianniu-cli/ai": ["packages/ai/src/index.ts"],
+      "@/tianniu-cli/ai/*": ["packages/ai/src/*"]
+    },
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
     "module": "nodenext",
